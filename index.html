@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/funciones.js"></script>
+    <script src="js/productos.json"></script>
+    <script src="js/formulario.js"></script>
+   
+    <title>Inmobiliaria</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Propiedades</a></li>
+          <li><a href="#">Contacto</a></li>
+          
+
+        </ul>
+      </nav>
+    </header>
+
+    <h2>Propiedades Destacadas</h2>
+    <section class="propiedades">
+      <div class="columna1"></div>
+      <div class="columna2"></div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="reserva">
+
+      <h2 class="fas fa-shopping-cart">  Reserva</h2>
+
+    <div class="carrito-container">
+      <!-- Aquí se mostrarán las cards agregadas al carrito -->
+    </div>
+
+    <form id="form-reserva">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+    
+      <label for="telefono">Teléfono de contacto:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+    
+     
+      <label id="senia" for="senia">Seña (en pesos):</label>
+      <input type="number" id="senia" name="senia" min="0" step="0.01" required />
+      
+    
+      <label class="mensaje" for="mensaje">Escribir un mensaje:</label>
+      <textarea class="mensaje" name="mensaje"></textarea>
+    
+      <button class="enviar-reserva" type="submit">Enviar reserva</button>
+    </form>
+    
+
+
+  </main>
+   <footer>
+    <div class="carrito">
+   
+  <p>Inmobiliar © 2023</p>
+</footer>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Casa Nova",
+    "descripcion": "Descripción de la propiedad 1",
+    "imagen": "img/descarga (1).jpg",
+    "precio": 100000
+  },
+  {
+    "id": 2,
+    "nombre": "La Roma",
+    "descripcion": "Descripción de la propiedad 2",
+    "imagen": "img/descarga (2).jpg",
+    "precio": 80000
+  },
+  {
+    "id": 3,
+    "nombre": "Patio de Patos",
+    "descripcion": "Descripción de la propiedad 3",
+    "imagen": "img/descarga (3).jpg",
+    "precio": 120000
+  },
+  {
+    "id": 4,
+    "nombre": "Lago Escondido",
+    "descripcion": "Descripción de la propiedad 4",
+    "imagen": "img/descarga (4).jpg",
+    "precio": 150000
+  },
+  {
+    "id": 5,
+    "nombre": "La Posta es la iglesia",
+    "descripcion": "Descripción de la propiedad 5",
+    "imagen": "img/descarga (5).jpg",
+    "precio": 90000
+  },
+  {
+    "id": 6,
+    "nombre": "Casa del Mar",
+    "descripcion": "Descripción de la propiedad 6",
+    "imagen": "img/descarga (6).jpg",
+    "precio": 180000
+  }
+]
