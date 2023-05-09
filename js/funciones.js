@@ -1,4 +1,14 @@
-const productos = JSON.parse(localStorage.getItem("productos")) || [];
+if (localStorage.getItem("productos") === null) {
+  fetch("js/productos.json")
+    .then((response) => response.json())
+    .then((data) => {
+      localStorage.setItem("productos", JSON.stringify(data));
+      var productos = JSON.parse(localStorage.getItem("productos"));
+    })
+    .catch((error) => console.error(error));
+} else {
+  var productos = JSON.parse(localStorage.getItem("productos"));
+}
 
 const columna1 = document.querySelector(".columna1");
 const columna2 = document.querySelector(".columna2");
