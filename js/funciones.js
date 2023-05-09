@@ -1,4 +1,4 @@
-const productos = JSON.parse(localStorage.getItem("productos"));
+const productos = JSON.parse(localStorage.getItem("productos")) || [];
 
 const columna1 = document.querySelector(".columna1");
 const columna2 = document.querySelector(".columna2");
@@ -123,6 +123,34 @@ function agregarAlCarrito(producto) {
   carritoContainer.appendChild(card);
 }
 
+////////////////////////////////form/////////////////////////
+
+const formReserva = document.querySelector("#form-reserva");
+const nombreInput = document.querySelector("#nombre");
+const telefonoInput = document.querySelector("#telefono");
+const seniaInput = document.querySelector("#senia");
+const mensajeInput = document.querySelector("#mensaje");
+
+formReserva.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const reserva = {
+    nombre: nombreInput.value,
+    telefono: telefonoInput.value,
+    senia: seniaInput.value,
+    mensaje: mensajeInput.value,
+  };
+
+  // guardar reserva en el LocalStorage
+  localStorage.setItem("reserva", JSON.stringify(reserva));
+
+  // limpiar el formulario
+  formReserva.reset();
+
+  // mostrar mensaje de éxito
+  alert("¡Reserva enviada con éxito!");
+});
+
 //////Finalizacion:
 
 const enviarReservaButton = document.querySelector(".enviar-reserva");
@@ -174,8 +202,6 @@ enviarReservaButton.addEventListener("click", async (event) => {
       });
     }
 
-    // Vaciar el carrito
-    carrito = [];
     // Obtener elementos form
     const seniaInput = document.getElementById("senia");
     const mensajeInput = document.getElementById("mensaje");
